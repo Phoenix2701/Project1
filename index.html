@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- main container -->
+    <div class="mainContainer">
+        <!-- left column -->
+        <div class="left-column">
+            <div class="left-column-items">
+                <img class="eclipse5" src="./assets/Ellipse 5.png" alt="">
+                <img class="comma" src="./assets/“.svg">
+                <p class="main-para">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>
+                <p style="display: inline;">Vincent Obi</p><img style="height: 12px; display: inline; margin-left:10px; border-radius: 50%;" src="./assets/circle.jpg" alt="">
+                <img style="margin-left: 300px;" src="./assets/Vector 1.svg" alt="">
+            </div>
+        </div>
+        <!-- right column -->
+        <div class="right-column">
+            <p style="color: grey; text-align: right; margin-top: 40px; margin-right: 50px;">Already Have an account? <a href="signIn.html">Sign In</a></p>
+            <div class="right-column-items">
+                <form data-multi-step>
+                    <div class="right-column-subitems" data-step>
+                        <h2>Join Us</h2>
+                        <p style="color: grey; margin-top: 0;">To begin this journey, tell us what type of account you'd be opening.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-secondary indi" type="button" value="individualAcc" data-next>
+                                    <h2>Individual</h2>
+                                    <p>Personal account to manage all you activities.</p>
+                                </button>
+                                <button class="btn btn-outline-secondary busi" type="button" value="businessAcc">
+                                    <h2>Business</h2>
+                                    <p>Own or belong to a company, this is for you.</p>
+                                </button>
+                            </div>
+                    </div>
+            
+                    <div class="right-column-subitems" data-step>
+                        <button class="right-column-subitems back-btn" data-previous>Back</button>
+                        <h2>Register Individual Account</h2>
+                        <p style="color: grey; margin-top: 0;">For the purpose of industry regulation, your details are required.</p>
+                        <div class="form-group">
+                            <label for="fullname">Your fullname</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <input type="checkbox" name="agree" id="agree"><label style="margin-left: .75em;" for="agree">I agree to terms and conditions.</label>
+                        <button type="button" class="btn btn-primary register-btn">Register</button>
+                        <div class="orpara">
+                            <p>or</p>
+                        </div>
+                        <button type="button" class="btn btn-light google-btn">Google</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
